@@ -22,9 +22,13 @@ _iTerm2 is configured to occupy only a portion of the screen._
 
 ## Hot Keys
 
-| Key Combination | Action |
-|:---------------:|:------:|
-| `Ctrl` + `0`    | Move windows according to above [Window Arrangement](#window-arrangement). |
+| Key Combination | Action                                                |
+|:---------------:|:-----------------------------------------------------:|
+| `Ctrl` + `0`    | Move windows according to above [Window Arrangement]. |
+| `Ctrl` + `1`    | Fullscreen active window on **Left Laptop**.          |
+| `Ctrl` + `2`    | Fullscreen active window on **Middle Monitor**.       |
+| `Ctrl` + `3`    | Fullscreen active window on **Right Monitor**.        |
 
 
 [Slate]: https://github.com/jigish/slate
+[Window Arrangement]: #window-arrangement

@@ -92,5 +92,10 @@ var universialLayout = function() {
 
 S.bindAll({
 	"0:ctrl": universialLayout,
-	"pad0:ctrl": universialLayout
+	"pad0:ctrl": universialLayout,
+	"1:ctrl": moveToLeftDisplay,
+	"2:ctrl": moveToMiddleDisplay,
+	"3:ctrl": moveToRightDisplay
 });
+
+S.log("[SLATE] Finished Loading Config");
