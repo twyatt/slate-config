@@ -35,51 +35,6 @@ var moveToRightDisplay = S.operation("move", {
 	"height": "screenSizeY"
 });
 
-/*
-var emulatorWidth = "480";
-var emulatorHeight = "768";
-
-var androidEmulatorOperation = function(windowObject) {
-	var title = windowObject.title();
-	var regex = /^Genymotion.*API (\d+).*$/;
-	if (title !== undefined && title.match(regex)) {
-		S.log("Found emulator: " + title);
-
-		match = regex.exec(title);
-		if (match != null) {
-			api = match[1];
-
-			var offset;
-			switch (api) {
-				default: // fall thru intentional
-				case '23':
-					offset = 0;
-					break;
-				case '21':
-					offset = 1;
-					break;
-				case '18':
-					offset = 2;
-					break;
-				case '16':
-					offset = 3;
-					break;
-			}
-
-			var screenOffsetX = emulatorWidth * (offset + 1);
-			var operation = S.operation("move", {
-				"screen": monitorViewSonicRight,
-				"x": "screenOriginX+screenSizeX-" + screenOffsetX,
-				"y": "screenOriginY",
-				"width": emulatorWidth,
-				"height": emulatorHeight
-			});
-			windowObject.doOperation(operation);
-		}
-	}
-}
-*/
-
 var threeDisplayLayout = S.layout("threeMonitor", {
 	"Google Chrome": {
 		operations: [moveToLeftDisplay],
@@ -117,12 +72,7 @@ var threeDisplayLayout = S.layout("threeMonitor", {
 			})
 		],
 		repeat: true
-	}/*,
-	"player": {
-		"operations": [androidEmulatorOperation],
-		"ignore-fail": true,
-		"repeat": true
-	}*/
+	}
 });
 
 // S.default(1, oneDisplayLayout);
