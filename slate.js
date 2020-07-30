@@ -62,15 +62,7 @@ var threeDisplayLayout = S.layout("threeMonitor", {
 		repeat: true
 	},
 	"iTerm2": {
-		operations: [
-			S.operation("move", {
-				"screen": monitorRight,
-				"x": "screenOriginX + 15",
-				"y": "screenOriginY + 15",
-				"width": "screenSizeX * 2/3",
-				"height": "screenSizeY - 25"
-			})
-		],
+		operations: [moveToRightDisplay],
 		repeat: true
 	}
 });
